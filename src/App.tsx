@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<div className='flex flex-col h-screen'>
+    <Header />
+  <div className="flex flex-grow items-center justify-center">
+    <Counter />
+  </div>
+</div>
   );
 }
 
